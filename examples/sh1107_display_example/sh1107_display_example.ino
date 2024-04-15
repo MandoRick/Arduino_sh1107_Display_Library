@@ -38,7 +38,7 @@
 SH1107 display;
 
 void setup() {
-  display.begin();
+  display.begin();    //display.begin(Wire1) can also be used
   clearDisplay();
   //drawPixel(int x, int y, uint8_t color)
   display.drawPixel(64, 64, WHITE);
