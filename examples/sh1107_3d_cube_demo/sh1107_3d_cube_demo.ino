@@ -60,7 +60,7 @@ uint32_t framesPerSecond;
 SH1107 display;
 
 void setup() {
-  display.begin();
+  display.begin();    //display.begin(Wire1) can also be used for a different i2c bus
   Wire.setClock(OLED_I2C_SPEED);
 }
 
